@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New York City Suggestion</title>
+    <link rel="stylesheet" href="style sugges.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("UPW5uwqlPRxZabjz7"); // Ganti dengan User ID EmailJS Anda
+        })();
+    </script>
+</head>
+<body>
+
+<!-- navbar start -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Tentang Kami</a>
+        <a href="sales.html">Penjualan</a>
+        <a href="produk.html">Produk</a>
+        <a href="suggestion.html">Saran</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+<!-- navbar end -->
+
+<!-- card start -->
+    <div class="suggestion">
+        <div class="container4">
+            <h1>SARAN!</h1>
+            <p>Komentar Anda akan membantu kami menjadi lebih baik lagi</p>
+            
+            <form id="suggestionForm" class="custom-form">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="input_nama" placeholder="Masukkan Nama Anda" class="form-control" required>
+                    <h5 style="color: #F1F6FA;" id="errornama"></h5>
+            
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="input_email" placeholder="Masukkan Email Anda" class="form-control" required>
+                    <h5 style="color: #F1F6FA" id="erroremail"></h5>
+
+                    <label for="comment">Komentar</label>
+                    <input type="text" id="comment" name="input_comment" placeholder="Masukkan Komentar Anda" class="form-control" required></textarea>
+                    <h5 style="color: #F1F6FA;" id="errorcomment"></h5>
+                </div>  
+                <input type="submit" class="btn btn-success" value="SIMPAN">
+            </form>      
+        </div>
+    </div>
+<!-- card end -->
+
+<div class="maps">
+    <div class="maps-container">
+        <div class="jumbotron6">
+            <h1>Terima Kasih Telah Mengunjungi Website Kami</h1>
+            <footer style="text-align: center">
+                <p>Hak Cipta &copy; 2024 Dibuat oleh. <a style="color: #C65BCF"><b>Tim Semarang 10</b></a>.</p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    document.getElementById('suggestionForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_k4a1cyp', 'template_yp3y8yv', this)
+            .then(function() {
+                alert('Saran Anda berhasil dikirim!');
+            }, function(error) {
+                alert('Terjadi kesalahan saat mengirim saran Anda: ' + JSON.stringify(error));
+            });
+    });
+</script>
+
+</body>
+</html>

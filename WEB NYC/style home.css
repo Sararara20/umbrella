@@ -1,0 +1,749 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: #F1F6FA
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #002B4E;
+  position: fixed; /* Tetapkan posisi navbar ke fixed */
+  width: 100%; /* Gunakan lebar 100% */
+  top: 0; /* Tempatkan navbar di bagian atas */
+  z-index: 1000; /* Tetapkan z-index untuk menempatkan navbar di atas konten lain */
+  
+} 
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+.jumbotron1 {
+  display: flex;
+  justify-content: center; /* Mengatur agar konten berada di tengah secara horizontal */
+  align-items: center; /* Mengatur agar konten berada di tengah secara vertikal */
+  position: relative;
+  background-image: url('./img/bag ny.png');
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.jumbotron1 > * {
+  max-width: 100%; /* Mengatur agar elemen-elemen di dalam .jumbotron1 tidak melebihi lebar layar */
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); 
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  color: white; 
+}
+
+.jumbotron1 img{
+  display: flex;
+  margin-bottom: 20px;
+  float: left; /* Mengatur gambar agar berada di sebelah kiri */
+  margin-right: 130px; /* Memberi jarak antara gambar dan teks */ 
+  margin-left: 150px;
+}
+
+.jumbotron1 p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 70px;
+  font-size: 40px;
+}
+
+.jumbotron1 p2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.jumbotron1 .button-container {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 760px;
+}
+
+.jumbotron1 .btn {
+  display: inline-block;
+  padding: 10px 60px;
+  background-color: #002B4E;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.jumbotron1 .btn:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.container1 {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.container1 img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  border-radius: 20px;
+  
+}
+
+.container1 p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.container1 p2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.container1 .button-container {
+  margin-top: 90px;
+}
+
+.container1 .btn {
+  display: inline-block;
+  padding: 10px 50px;
+  background-color: #002B4E;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.container1 .btn:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.sales {
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center; /* Mengatur agar konten berada di tengah secara horizontal */
+  align-items: center; /* Mengatur agar konten berada di tengah secara vertikal */
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container2 img{
+  display: flex;
+  margin-bottom: 20px;
+  float: left;
+  margin-right: 90px;
+  margin-left: 150px;
+  border-radius: 20px;
+  margin-top: 150px;
+  
+}
+
+.container2 h1{
+  position: absolute;
+  z-index: 1;
+  color: #002B4E;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 600px;
+}
+
+.container2 p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 150px;
+  margin-left: 0;
+  font-size: 30px;
+}
+
+.container2 p2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 150px;
+  font-size: 15px;
+}
+
+.container2 .button-container {
+  margin-top: 70px;
+  margin-left: 0;
+}
+
+.container2 .btn {
+  display: inline-block;
+  padding: 10px 220px;
+  background-color: #002B4E;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.container2 .btn:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+}
+
+.container3 {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.container3 img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+
+.container3 .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.container3 .column {
+  flex: 20%;
+  padding: 0 20px;
+  margin-bottom: 20px; /* Adjusted margin-bottom */
+  margin-left: 0; /* Adjusted margin-left */
+}
+
+.container3 .column-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.container3 .column-content p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.container3 .button-container {
+  margin-top: 120px;
+}
+
+.container3 .btn {
+  display: inline-block;
+  padding: 10px 290px;
+  background-color: #002B4E;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.container3 .btn:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.suggestion {
+  display: flex;
+  justify-content: center;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center; /* Mengatur agar konten berada di tengah secara horizontal */
+  align-items: center; /* Mengatur agar konten berada di tengah secara vertikal */
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container4 .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container4 .custom-card {
+  width: 1000px; /* Sesuaikan lebar kartu sesuai kebutuhan */
+  margin: 20px; /* Sesuaikan margin antara kartu */
+  background-color: #002B4E; /* Warna latar belakang kartu */
+  border-radius: 10px; /* Corner radius kartu */
+  box-shadow: 0 4px 6px #002B4E; /* Shadow kartu */
+}
+
+.container4 .custom-card-body {
+  padding: 20px; /* Padding isi kartu */
+}
+
+.container4 .custom-card img {
+  display: flex;
+  margin-bottom: 20px;
+  float: left; /* Mengatur gambar agar berada di sebelah kiri */
+  margin-right: 130px; /* Memberi jarak antara gambar dan teks */ 
+  margin-left: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.container4 .custom-card h1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 100px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.container4 .custom-card p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 150px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.container4 .custom-card .button-container {
+  margin-top: 40px;
+  margin-right: 150px;
+}
+
+.container4 .custom-card .btn {
+  display: inline-block;
+  padding: 10px 120px;
+  background-color: #ffffff;
+  color: #002B4E;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.container4 .custom-card .btn:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.maps {
+  background-color: #002B4E;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.maps-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.jumbotron6 {
+  color: #f2f2f2;
+}
+
+.jumbotron6 h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.jumbotron6 p2 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+      display: none;
+  }
+
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+
+  .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+  }
+
+  .topnav input[type=text] {
+      border: 1px solid #002B4E;
+  }
+
+  .topnav.responsive {
+      position: fixed;
+  }
+
+  .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+  .jumbotron1, .jumbotron2, .jumbotron3, .jumbotron4, .jumbotron5, .jumbotron6 {
+    height: 800px; /* Mengatur tinggi jumbotron menjadi 400px */
+    width: 100%; /* Mengatur lebar jumbotron menjadi 100% */
+  }
+
+  .jumbotron1 img, .jumbotron2 img, .jumbotron3 img, .jumbotron4 img, .jumbotron5 img, .jumbotron6 img{
+    width: 100%; /* Mengatur lebar gambar menjadi 80% */
+    height: 100%; /* Mengatur tinggi gambar menjadi 80% */
+    margin: auto; /* Memposisikan gambar di tengah */
+    display: block; /* Memastikan gambar berada di tengah */
+    float: none;
+  }
+
+ .container2 img, .container4 img{
+    width: 80%; /* Mengatur lebar gambar menjadi 80% */
+    height: 35%; /* Mengatur tinggi gambar menjadi 80% */
+    margin: auto; /* Memposisikan gambar di tengah */
+    display: block; /* Memastikan gambar berada di tengah */
+    float: none;
+  }
+
+.jumbotron1 {
+  background-size: 100% 100%; /* Menyesuaikan ukuran gambar latar belakang */
+}
+.jumbotron1 img {
+  float: none;
+}
+.jumbotron1 .button-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.jumbotron1 p2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 10px;
+  /* margin-left: 100px; */
+  /* margin-right: 150px; */
+  font-size: 15px;
+}
+.jumbotron1 p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 40px;
+  /* margin-left: 100px; */
+  font-size: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.container2 h1 {
+  position: static;
+  margin-bottom: 0;
+  display: block;
+}
+.container1 {
+  text-align: center; /* Menengahkan teks */
+  width: 100%;
+  padding: 0;
+}
+
+.container1 img {
+  width: 100%; /* Mengurangi lebar gambar */
+  height: auto; /* Menyesuaikan tinggi gambar */
+  margin: auto; /* Memposisikan gambar di tengah */
+  display: block; /* Memastikan gambar berada di tengah */
+  float: none; /* Menghapus float */
+}
+
+.container1 .button-container {
+  margin-top: 20px; /* Menyesuaikan margin atas tombol */
+  margin-left: auto; /* Menengahkan tombol secara horizontal */
+  margin-right: auto; /* Menengahkan tombol secara horizontal */
+  position: static; /* Mengembalikan posisi tombol menjadi statis */
+}
+
+.container2 p2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 0;
+  /* margin-right: 150px; */
+  font-size: 15px;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+.container2 .button-container {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+  text-align: center;
+}
+
+.container2 .btn {
+  width: auto; /* Ensure the button does not stretch too wide */
+  padding: 10px 60px; /* Adjust padding to fit the smaller screen better */
+}
+
+.container2 {
+  padding: 0 20px; /* Add padding to container to prevent overflow */
+}
+
+.container2 p1{
+  text-align: center; /* Center the text */
+  margin-left: auto; /* Ensure margins auto-adjust */
+  margin-right: auto;
+  margin-top: 20px;
+}
+.container2 p2 {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sales {
+  margin-bottom: 50px;
+}
+.product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.container3 {
+  padding: 0 20px;
+}
+.container3 .row {
+  flex-direction: column; /* Stack the columns vertically on smaller screens */
+  align-items: center; /* Center the columns */
+  margin-top: 10px;
+}
+
+.container3 .column-content {
+  max-width: 100%; /* Make the columns take up full width */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container3 .button-container {
+  text-align: center; /* Center-align buttons on smaller screens */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+  text-align: center;
+}
+.container3 .btn {
+  padding: 20px 50px;
+  width: auto;
+}
+.column-content img {
+  width: 70%;
+  height: auto;
+  margin: auto; /* Memposisikan gambar di tengah */
+  display: block; /* Memastikan gambar berada di tengah */
+  float: none; /* Menghapus float */
+}
+.container4 .custom-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #002B4E;
+  border-radius: 0;
+  box-shadow: none;
+}
+.container4 .custom-card img {
+  margin-bottom: 10px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 50%;
+  /* flex-direction: column; */
+}
+.container4 .custom-card p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  color: #ffffff;
+}
+.container4 .custom-card h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: 100px; */
+  font-size: 40px;
+  color: #ffffff;
+}
+.container4 .custom-card .button-container {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.jumbotron6 {
+  width: 100%;
+  height: 180px;
+}
+.maps {
+  background-color: #002B4E;
+  text-align: center;
+  padding: 10px;
+}
+.container4 .custom-card-body {
+  padding: 0;
+}
+.container4 .custom-card .button-container {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.container4 .custom-card .btn {
+  display: inline-block;
+  padding: 10px 50px;
+  background-color: #ffffff;
+  color: #002B4E;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+}

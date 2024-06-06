@@ -1,0 +1,274 @@
+/* General Reset and Body Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: #F1F6FA;
+}
+
+/* Navbar Styles */
+.topnav {
+  overflow: hidden;
+  background-color: #002B4E;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+.data-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.content {
+  padding-top: 60px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Flex Container for Select Elements */
+.SelCon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+.select-1, .select-2, .select-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+  color: #002B4E;
+}
+
+/* Table Styles */
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #002B4E;
+  color: white;
+}
+
+/* Maps Section Styles */
+.maps {
+  background-color: #002B4E;
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.maps-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.jumbotron6 {
+  color: #f2f2f2;
+}
+
+.jumbotron6 h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.jumbotron6 p2 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.row-limit {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.maps {
+  margin-top: 60px;
+}
+
+/* Select Styles */
+select {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #002B4E;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #002B4E;
+  width: auto;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover and Focus Styles */
+select:hover, select:focus {
+  background-color: #e0e0e0;
+  border-color: #C65BCF;
+}
+
+/* Row Limit Select Styles */
+.row-limit select {
+  margin-top: 10px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid #002B4E;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #002B4E;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.row-limit select:hover, .row-limit select:focus {
+  background-color: #e0e0e0;
+  border-color: #C65BCF;
+}
+
+.row-limit label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #002B4E;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+      display: none;
+  }
+
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+
+  .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+  }
+
+  .topnav input[type=text] {
+      border: 1px solid #002B4E;
+  }
+
+  .topnav.responsive {
+      position: fixed;
+  }
+
+  .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+  
+  .data-title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25%;
+}
+
+  .SelCon {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .select-1, .select-2, .select-3 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  table, th, td {
+    font-size: 8px; /* Adjust font size for smaller screens */
+  }
+
+  .maps-container {
+    padding: 20px;
+  }
+
+  .jumbotron6 h1 {
+    font-size: 20px;
+  }
+
+  .jumbotron6 p2 {
+    font-size: 10px;
+  }
+
+  .row-limit {
+    font-size: 12px;
+  }
+}
+
+
+

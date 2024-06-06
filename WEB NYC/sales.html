@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New York City Sales</title>
+    <link rel="stylesheet" href="style sales.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- navbar start -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">About Us</a>
+        <a href="sales.html">Sales</a>
+        <a href="produk.html">Product</a>
+        <a href="sugesstion.html">Suggestion</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+<!-- navbar end -->
+<div class="content">
+    <h1 class="data-title">NYC PROPERTY DATA</h1>
+    <div class="SelCon">
+      <div class="select-1">
+        <label>Filter by Year:</label>
+        <select name="year" id="year">
+          <option value="">Select Year</option>
+        </select>
+      </div>
+  
+      <div class="select-2">
+        <label>Sort by Sales Price:</label>
+        <select name="sort" id="sort-data-table-sales-price">
+          <option value="">Sort Data</option>
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+      </div>
+      
+      <div class="select-3">
+        <label>Filter by Borough:</label>
+        <select name="borough" id="borough-filter">
+          <option value="">Select Borough</option>
+        </select>
+      </div>
+    </div>
+  </div>
+    
+    <table style="width: 100%;">
+      <thead>
+        <th>NO</th>
+        <th>BOROUGH</th>
+        <th>NEIGHBORHOOD</th>
+        <th>LOT</th>
+        <th>SALE PRICE</th>
+        <th>SALE DATE</th>
+      </thead>
+      <tbody id="data-table">
+        <!-- Data will be injected here -->
+      </tbody>
+    </table>
+
+    <!-- Select for number of rows per page -->
+    <div class="row-limit">
+        <label for="row-limit">Rows per page:</label>
+        <select name="row-limit" id="row-limit">
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+    </div>
+
+    <div class="maps">
+        <div class="maps-container">
+            <div class="jumbotron6">
+                <h1>Terima Kasih Telah Mengunjungi Website Kami</h1>
+                <footer style="text-align: center">
+                    <p2>Copyright &copy; 2024 Built by. <a style="color: #C65BCF"><b>Semarang Team 10</b></a>.</p2>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>    
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }  
+
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script src="sales.js"></script>
+
+</body>
+</html>

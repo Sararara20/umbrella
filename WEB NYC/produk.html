@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New York City Product</title>
+    <link rel="stylesheet" href="style product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- navbar start -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">About Us</a>
+        <a href="sales.html">Sales</a>
+        <a href="produk.html">Product</a>
+        <a href="sugesstion.html">Suggestion</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <input type="text" placeholder="Search..">
+    </div>
+
+<!-- navbar end -->
+<div class="content">
+    <h1 class="dashboard-title">NYC PROPERTY SALES DASHBOARD</h1>
+    <div class="sel">
+      <label>Filter by Year:</label>
+    <select name="year" id="year" class="year-select" style="margin-bottom: 1rem;">
+      <option value="">Select Year</option>
+    </select>
+  </div>
+
+    <div class="container">
+      <div class="wrapper">
+        <div class="card">
+          <h4>Total Sales Price</h4>
+          <h3 id="total-sales-price">200</h3>
+        </div>
+        <div class="card">
+          <h4>Average Sales</h4>
+          <h3 id="average-sales">200</h3>
+        </div>
+        <div class="card">
+          <h4>Total Unit</h4>
+          <h3 id="total-unit">200</h3>
+        </div>
+        <div class="card">
+          <h4>Total Commercial Unit</h4>
+          <h3 id="total-commercial-unit">200</h3>
+        </div>
+        <div class="card">
+          <h4>Total Residential Unit</h4>
+          <h3 id="total-residential-unit">200</h3>
+        </div>
+        <div class="card">
+          <h4>Total Transaction</h4>
+          <h3 id="total-transaction">200</h3>
+        </div>
+      </div>
+    </div>
+    <div class="box-container">
+      <div class="box" id="box1">
+        <div class="box-wrapper">
+        <canvas id="chart-3"></canvas>
+        </div>
+      </div>
+      <div class="box" id="box2">
+        <div class="box-wrapper">
+        <canvas id="chart-1"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="box-container">
+      <div class="box" id="box3">
+        <div class="box-wrapper">
+        <canvas id="chart-2"></canvas>
+        </div>
+      </div>
+      <div class="box" id="box4">
+        <div class="box-wrapper">
+        <canvas id="chart-4"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="box-container">
+      <div class="box-1" id="box5">
+        <div class="box-wrapper">
+        <canvas id="chart-5"></canvas>
+        </div>
+      </div>
+      <div class="box" id="box6">
+        <div class="box-wrapper">
+        <canvas id="chart-6"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="maps">
+    <div class="maps-container">
+        <div class="jumbotron6">
+            <h1>Terima Kasih Telah Mengunjungi Website Kami</h1>
+            <footer style="text-align: center">
+                <p2>Copyright &copy; 2024 Built by. <a style="color: #C65BCF"><b>Semarang Team 10</b></a>.</p2>
+            </footer>
+        </div>
+    </div>
+</div>
+
+    <script>    
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }  
+    </script>
+
+    <script src="produk.js"></script>
+
+</body>
+</html>
